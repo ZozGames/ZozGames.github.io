@@ -1,18 +1,21 @@
 <html>
 <head>
-<title>ZozGames</title>
-</head>
-<body>
-  <style>
+  <title>
+    ZozGames
+    </title>
+  </head>
+<style>
 .dropdown {
     position: relative;
-    display: inline-block;
+  
 }
 
 .dropdown-content {
-    display: none;
+	display:none;
+   
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #333;
+	color: #ffffff;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
@@ -20,16 +23,77 @@
 }
 
 .dropdown:hover .dropdown-content {
+    display: inline-block;
+	position: left;
+	right : 0px;
+}
+ @font-face { font-family: JuneBug;
+	  src: url('C:/Users/user/Desktop/zozsite/PRIMETIME.ttf'); } 
+      .font1 {
+         font-family: JuneBug
+      }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+	block;
+}
+
+li a {
+position: relative;
     display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	align : center;
+}
+
+li a:hover {
+    background-color: #111;
+}
+.graycolor {
+
 }
 </style>
+</head>
+<body>
 
-<div class="dropdown">
-  <span>Mouse over me</span>
+<ul>
+
+  <li><a class="active font1" href="#home"><font color="ff0000">Zoz</font>Games</a></li>
+<div class = "dropdown">
+  <li><a class="font1"href="about ">Home</a></li>
   <div class="dropdown-content">
-    <p>Hello World!</p>
+  <p>Home</p>
   </div>
-</div>
-test
+  </div>
+<div class = "dropdown">
+  <li><a class="font1"href="about ">News</a></li>
+  <div class="dropdown-content">
+  <p>See the updates and devlogs</p>
+  </div>
+    </div>
+    <div class = "dropdown">
+  <li><a class="font1"href="about ">Contact</a></li>
+  <div class="dropdown-content">
+  <p>Contact information</p>
+  </div>
+  </div>
+  <div class = "dropdown">
+  <li><a class="font1"href="about ">About</a></li>
+  <div class="dropdown-content">
+  <p>More About</p>
+  </div>
+  </div>
+
+</ul>
+
 </body>
 </html>
